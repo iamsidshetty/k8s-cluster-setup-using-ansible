@@ -32,10 +32,10 @@ Run the following commands:
 
 ```
 # check the ansible playbook syntax
-ansible-playbook --syntax-check kubernetes-cluster-1W-2M.yaml -i aws-hosts
+ansible-playbook --syntax-check kubernetes-cluster-1M-2W.yaml -i aws-hosts
 
 # run the playbook
-ansible-playbook kubernetes-cluster-1W-2M.yaml -i aws-hosts
+ansible-playbook kubernetes-cluster-1M-2W.yaml -i aws-hosts
 ```
 
 The join command for worker nodes to join the master node is in the ```cluster-join.txt``` file created by ```kubeadm init``` command and is located in the home directory of your Master node
