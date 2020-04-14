@@ -23,9 +23,9 @@ Worker Nodes: [t2.micro](https://aws.amazon.com/ec2/instance-types/t2/)
 ## Steps to run Ansible Playbook
 ```
 # check the ansible playbook syntax
-ansible-playbook \-\-syntax-check kubernetes-cluster\-1W\-2M.yaml \-i aws-hosts
+ansible-playbook --syntax-check kubernetes-cluster-1W-2M.yaml -i aws-hosts
 # run the playbook
-ansible-playbook kubernetes-cluster-1W-2M.yaml \-i aws\-hosts
+ansible-playbook kubernetes-cluster-1W-2M.yaml -i aws-hosts
 ```
 
 The join command for worker nodes to join the master node is in the cluster-join.txt created by ```kubeadm init``` command and is located in the home directory of your Master node
