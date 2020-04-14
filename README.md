@@ -38,12 +38,12 @@ ansible-playbook --syntax-check kubernetes-cluster-1W-2M.yaml -i aws-hosts
 ansible-playbook kubernetes-cluster-1W-2M.yaml -i aws-hosts
 ```
 
-The join command for worker nodes to join the master node is in the cluster-join.txt created by ```kubeadm init``` command and is located in the home directory of your Master node
+The join command for worker nodes to join the master node is in the ```cluster-join.txt``` file created by ```kubeadm init``` command and is located in the home directory of your Master node
 
 
 ## Future Enhancements
-1. Use ansible variables to pass the join command from Manager to Worker Nodes. This will eliminate the need for user to manually run the join command aftre ```kubeadm init```
-2. Add playbooks for GCP, Azure and OCI
+1. Use ansible variables to pass the join command from Manager to Worker Nodes. This will eliminate the need for user to manually run the join command after ```kubeadm init```
+2. Enhance/add playbooks for other public cloud providers - GCP, Azure and OCI
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
