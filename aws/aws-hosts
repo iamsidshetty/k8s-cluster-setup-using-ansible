@@ -1,0 +1,15 @@
+[Masters]
+#Manger1 IP
+
+[Workers]
+#Worker1 IP
+#Worker2 IP
+
+[allservers:children]
+Masters
+Workers
+
+[allservers:vars]
+ansible_connection=ssh
+ansible_user=ubuntu
+ansible_ssh_private_key_file=<enter path for ssh keys>
