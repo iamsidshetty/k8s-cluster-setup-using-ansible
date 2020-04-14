@@ -1,5 +1,5 @@
 # Kubernetes Cluster Setup in Public Cloud Using Ansible Playbooks
-Provides Ansible playbook to setup a K8s Cluster (1 Manager and N workers) on AWS 
+Provides Ansible playbook to setup a K8s Cluster (1 Manager and N workers)
 
 ## Ansible Setup
 ### Installation
@@ -20,7 +20,14 @@ Manager Nodes: [t2.large](https://aws.amazon.com/ec2/instance-types/t2/)
 
 Worker Nodes: [t2.micro](https://aws.amazon.com/ec2/instance-types/t2/)
 
-## Steps to run Ansible Playbook
+## Steps to run Ansible Playbook for setting Cluster in AWS
+
+Ansible playbook is located in aws folder
+
+Add the AWS instances IPs and ssh key path to aws-hosts file
+
+Run the following commands:
+
 ```
 # check the ansible playbook syntax
 ansible-playbook --syntax-check kubernetes-cluster-1W-2M.yaml -i aws-hosts
